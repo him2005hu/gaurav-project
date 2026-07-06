@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "LandingPageConfig": {
+      "title": "LandingPageConfig",
+      "description": "The configuration and content of the Lean90 landing page, editable via the admin panel.",
+      "type": "object",
+      "properties": {
+        "header": {
+          "type": "object",
+          "description": "The header logo and branding details"
+        },
+        "hero": {
+          "type": "object",
+          "description": "Hero section titles, images, and features"
+        },
+        "problem": {
+          "type": "object",
+          "description": "The pain points and problem description"
+        },
+        "bento": {
+          "type": "object",
+          "description": "The bento grid displaying program materials (ebooks, guides, trackers)"
+        },
+        "included": {
+          "type": "object",
+          "description": "List of core features included in the program"
+        },
+        "bonuses": {
+          "type": "object",
+          "description": "Extra premium materials given as free bonuses"
+        },
+        "results": {
+          "type": "object",
+          "description": "Social proof and user testimonials"
+        },
+        "pricing": {
+          "type": "object",
+          "description": "Pricing details and call to action"
+        },
+        "faq": {
+          "type": "object",
+          "description": "Frequently asked questions"
+        },
+        "footer": {
+          "type": "object",
+          "description": "Footer branding and copyright information"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["header", "hero", "problem", "bento", "included", "bonuses", "results", "pricing", "faq", "footer"]
+    }
+  },
+  "firestore": {
+    "/configs/landing_page": {
+      "schema": "LandingPageConfig",
+      "description": "Global configuration document holding the content of the landing page."
+    }
+  }
+}
