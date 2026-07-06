@@ -1,0 +1,6 @@
+{
+  "name": "Lean90 Fat Loss CMS",
+  "description": "A fully dynamic, Firebase-connected content management system and landing page for the Lean90 fat loss program, featuring full live customization of text, cards, FAQ, pricing, and photo upload utilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
